@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="onInit()">
+  <div class="store-header">
+      <div class="centered-title"><h1 data-trans="title">Welcome to my Book shop!</h1></div>
+  </div>
+  <div>
+    <img id="icon" onclick="darkMode(this)" src="img/icon-moon.svg">
+  </div>
+  <div class="content">
+  <section class="creat-new-book">
+    <button data-trans="creat-new-book" title="Add Book" onclick="onAddBook()">Creat new book</button>
+    </select>
+    <header class="languages-list">
+      <h4 data-trans="subtitle"></h4>
+      <select onchange="onSetLang(this.value)" class="languages-dropdown">
+        <option value="en">English</option>
+        <option value="he">עברית</option>
+      </select>
+        <select class="the-sort-by" value="0" onchange="onSetSortBy()">
+          <option data-trans="High-to-Low" value="High-to-Low">Max price</option>
+          <option data-trans="Min-rate" value="Min-rate">Min rate</option>
+        </select>
+        <select class="the-sort-by" value="0" onchange="onSetSortBy()">
+          <option data-trans="High-to-Low" value="High-to-Low">Max price</option>
+          <option data-trans="Min-rate" value="Min-rate">Min rate</option>
+        </select>
+    </header>
+  </section>
+  <div class="search-box">
+    <input class="search-box"data-trans="search-box" id="search-input" onkeyup="searchBook()" type="text" placeholder="Search a book..." />
+  </div>
+  <div class="books-container1">
+
+    <section class="books-container"></section>
+
+
+    <div class="books-container"></div>
+    <div class="modal">
+      <h3 class="book-title"></h3>
+
+      <label data-trans="rate-the-book"></label>
+      Rate the book from 1 to 10: <span class="book-the-rating"></span>
+      <hr>
+      <input class="book-rating-input" type="number" min="0" max="10" value="0" name="rate" />
+      <button onclick="getInputValue()" type="submit" value="111">Submit</button>
+
+
+      <h4 class="book-rating"><span></span></h4>
+      <h5 class="book-description">Book Descriptions</h5>
+      <p></p>
+      <button onclick="onCloseModal()">Close</button>
+    </div>
+    
+    <div class="user-msg"></div>
+  </div>
+    <script src="js/services/utils.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/services/books.service.js"></script>
+    <script src="js/books.contoller.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <table class="GeneratedTable">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>_makeId()</td>
+        <td>gBooks.title</td>
+        <td>$$$</td>
+        <td><button>Read</button></td>
+        <td><button>Update</button></td>
+        <td><button>Delete</button></td>
+      </tr>
+      <tr>
+        <td>_makeId()</td>
+        <td>gBooks.title</td>
+        <td>$$</td>
+        <td><button>Read</button></td>
+        <td><button>Update</button></td>
+        <td><button>Delete</button></td>
+      </tr>
+      <tr>
+        <td>_makeId()</td>
+        <td>gBooks.title</td>
+        <td>$$</td>
+        <td><button>Read</button></td>
+        <td><button>Update</button></td>
+        <td><button>Delete</button></td>
+      </tr>
+    </tbody>
+  </table> -->

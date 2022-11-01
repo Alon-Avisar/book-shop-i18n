@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding: 0 40px;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif; 
+    margin: 0;
+    padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin: 200px auto;
+    }
+
+    .store-header {
+      background-image: url("https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+      background-position: center;
+  
+      -webkit-background-size: cover;
+      background-size: cover;
+  
+      -webkit-filter: contrast(0.5);
+      filter: grayscale(100%) contrast(0.5);
+  
+      position: absolute;
+      height: 350px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .centered-title {
+      color: #fff;
+      text-shadow: 0px 0px 1px black;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 250px;
+    }
+
+    .books-image {
+      filter: grayscale(100%);
+    }
+
+
+.creat-new-book {
+  display: flexbox;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.languages-list {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.languages-dropdown {
+  padding: 5px;
+}
+
+.the-sort-by {
+    padding: 5px;
+    margin-left: 5px;
+    color: rgb(0, 0, 0); 
+}
+
+.search-book {
+    font-size: 15px;
+    color: rgb(0, 0, 0); 
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(255, 250, 239);
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+
+  border-collapse: collapse; 
+}
+
+tr + tr > td{
+  border-top: 1px solid rgb(201, 201, 201);
+}
+
+tr {
+    font-size: 21px;
+}
+
+button {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: .5em;
+    background-color: none;
+    padding: 5px 20px;
+    padding-top: 10px;
+    margin: 11px;
+    margin-bottom: 6px;
+    cursor: pointer;    
+}
+
+button:hover {
+    color: rgb(93, 200, 219);
+}
+
+.modal {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 150%;
+    height: 50vh;
+    min-width: 300px;
+    text-align: center;
+}
+.modal.open {
+    left: 70%;
+    transition: left .5s;
+}
+
+.modal h3{
+    color: rgb(93, 200, 219);
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+.modal h4 span{
+    color: rgb(93, 200, 219);
+}
+.modal > p {
+    text-align: left;
+}
+
+
+.user-msg {
+    font-size: 20px;
+    color: rgb(3, 2, 2);
+    position: fixed;
+    bottom: -100px;
+    right:10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.user-msg.open {
+    color: rgb(0, 0, 0);
+    bottom: 10px;
+    transition: bottom .5s;
+}
+
+
+table.GeneratedTable {
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  padding: 3px;
+}
+/* the table hear color!
+ */
+table.GeneratedTable thead {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#icon {
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+.dark-theme {
+    background-color: rgb(31, 30, 30);
+    --white: rgb(0, 0, 0);
+    --primary-color: rgb(20, 22, 37);
+    --font-color: #ffffff;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .btn-delete {
+    float: left;
+} 
+
+body.dark-mode {
+color: aqua;
+}
+
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #search-input{
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(133, 133, 133);
+    width: 100%;
+  }
+
